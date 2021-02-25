@@ -42,8 +42,8 @@ app.use((req,res,next) =>{
 app.use('/api/v1/users', userRouter);
 
 // 4) START SERVERS
- const port = 4567;
 
-app.listen(port, () =>{
-      console.log("App is running on Port" + port)
+
+app.listen(process.env.PORT || 4567, () =>{
+      console.log("App is running on Port " + port)
 });
