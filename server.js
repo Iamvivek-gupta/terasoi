@@ -45,5 +45,5 @@ app.use('/api/v1/users', userRouter);
  const port = 4567;
 
 app.listen(port, () =>{
-      console.log(`App is running on Port ${port}...`)
+      console.log("App is running on Port" + port)
 });
