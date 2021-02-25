@@ -6,16 +6,16 @@ var ObjectID = mongo.ObjectID;
 
 exports.getAllUser = async (req, res) =>{
     try{
-        let query = User.find();
-        const users = await query; 
+        // let query = User.find();
+        // const users = await query; 
        
 
         res.status(200).json({
         status: 'success',
-        result: users.length,
-        data: {
-            users
-        }
+        result: "hallo world",
+        // data: {
+        //     users
+        // }
     });
     } catch(err){
         res.status(400).json({
