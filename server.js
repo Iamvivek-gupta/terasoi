@@ -45,5 +45,5 @@ app.use('/api/v1/users', userRouter);
 
 
 app.listen(process.env.PORT || 4567, () =>{
-      console.log("App is running on Port " + port)
+      console.log("App is running on Port 3000")
 });
