@@ -5,12 +5,12 @@ const mongoose = require('mongoose');
 const userRouter = require('./routes/userRoutes');
 const app = express();
 
-dotenv.config({ path : './config.env'});
+//dotenv.config({ path : './config.env'});
 
 
 // connect Mongodb Compass
 
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect('mongodb+srv://vivek:vivek123@cluster0-a1rol.mongodb.net/terasol?retryWrites=true&w=majority', {
     useNewUrlParser : true,
     useCreateIndex : true,
     useFindAndModify : false,
